@@ -13,7 +13,7 @@ class Student
 	#[Id]
 	#[GeneratedValue]
 	#[Column]
-	public readonly int $id
+	public readonly int $id;
 
     public function __construct (
 		#[Column]

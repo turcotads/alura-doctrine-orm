@@ -8,16 +8,15 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\GeneratedValue;
 
 #[Entity]
-class Student
-{
-    #[Id]
-    #[GeneratedValue]
-    #[Column]
-    public readonly int $id;
+class Student {
+	#[Id]
+	#[GeneratedValue]
+	#[Column]
+	public readonly int $id;
 
-    public function __construct(
-        #[Column]
-        public readonly string $name
-    ) {
-    }
+	public function __construct(
+		#[Column]
+		public readonly string $name
+	) {
+	}
 }

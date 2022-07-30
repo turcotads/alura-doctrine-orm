@@ -7,6 +7,6 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $entityManager = EntityManagerCreator::createEntityManager();
 
-$student = new Student('Fabio Madeira Peres');
+$student = new Student($argv[1]);
 $entityManager->persist($student);
 $entityManager->flush();

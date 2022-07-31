@@ -11,7 +11,18 @@ $studentRepository = $entityManager->getRepository(Student::class);
 /** @var Student[] $studentList */
 $studentList = $studentRepository->findAll();
 foreach ($studentList as $student) {
-	echo "ID: $student->id\nNome: $student->name\n\n";
+	echo "ID: $student->id\nNome: $student->name\n";
+
+	$phones = $student->phones();
+
+	if (count($phones)) {
+		echo "Telefone(s):\n";
+
+		foreach ($phones as $phone) {
+			echo $phone->number . PHP_EOL;
+		}
+	}
+	echo PHP_EOL;
 }
 
 echo 'Count: ' . $studentRepository->count([]) . PHP_EOL . PHP_EOL;

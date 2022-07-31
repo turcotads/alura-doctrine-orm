@@ -31,9 +31,9 @@ class Student {
 	}
 
 	/**
-	 * @return iterable<Phone>
+	 * @return Collection<Phone>
 	 */
-	public function phones(): iterable {
+	public function phones(): Collection {
 		return $this->phones;
 	}
 }

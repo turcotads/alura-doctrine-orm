@@ -1,8 +1,6 @@
 <?php
 
 use Alura\Doctrine\Entity\Course;
-use Alura\Doctrine\Entity\Phone;
-use Alura\Doctrine\Entity\Student;
 use Alura\Doctrine\Helper\EntityManagerCreator;
 
 require __DIR__ . '/../vendor/autoload.php';
